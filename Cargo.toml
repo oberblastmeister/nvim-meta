@@ -1,0 +1,20 @@
+[package]
+name = "nvim-meta"
+version = "0.1.0"
+authors = ["Brian Shu <littlebubu.shu@gmail.com>"]
+edition = "2018"
+
+[workspace]
+members = [
+    "crates/*",
+]
+
+exclude = [
+    "crates/regular",
+]
+
+[lib]
+path = "crates/regular/lib.rs" 
+
+[dependencies]
+nvim-rs = "0.2.0"
